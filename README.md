@@ -17,12 +17,18 @@ There are multiple ways to use Jquery
         log('you clicked btn.')
         $(this).hide();//that particular thing only hide.
     }); //do this when btn click.
-    - 'button' is just a selector. you can select this by .class and #ID as well.
+        - this keyword - Suppose you have multiple button you have targeted with tag only. So if you click then all button will hide. so to solve this issue we use this.hide.
+        - 'button' is just a selector. you can select this by .class and #ID as well.
 
 - Before loding HTML jquery load and work, So for that we use 
     $(document).ready(){
         All functions will come under this.
     }
 
-
+- Event click 
+    -ready
+    -click
+    -hide
+    -show
+    
 
