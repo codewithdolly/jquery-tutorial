@@ -7,9 +7,26 @@
     <title>jquary</title>
   </head>
   <body>
-    <p>This is the Home page.</p>
-
     <button>SAVE</button>
+    <p class="content">This is the Home page.</p>
+    
+    <br /><br />
+    <button id="togglebtn">Toggle button</button>
+    <button id="fadebtn">Fade Toggle button</button>
+    <div id="rana">
+      Rana Jayant is a digital business consultant and product owner from
+      Hyderabad, India helping businesses grow their business online. He started
+      his first website in class 9 and has worked with HETERO Labs, L&T, BMW,
+      Amazon CA, Amazon US, Google India and 40+ SMEs. His work has reached to
+      800M+ internet users online.
+      <br />
+      Rana Jayant is a digital business consultant and product owner from
+      Hyderabad, India helping businesses grow their business online. He started
+      his first website in class 9 and has worked with HETERO Labs, L&T, BMW,
+      Amazon CA, Amazon US, Google India and 40+ SMEs. His work has reached to
+      800M+ internet users online.
+    </div>
+
 
     <!-- download version -->
     <script src="jquery-3.6.0.min.js"></script>
@@ -21,10 +38,46 @@
           console.log("button clicked");
         }); //do this when btn clicked.
 
-        //P
-        $("p").click(function () {
-          alert("Hey P");
+        //with element P
+        $(".content").click(function () {
+          console.log("Hey P", this);
         });
+
+        //demo with on method
+        // $("p").on("click", function () {
+        //   console.log("Thanks for clicking", this);
+        // });
+
+        //Demo On method with multiple function
+        $("p").on({
+          click: function () {
+            console.log("Thanks for clicking", this);
+          },
+          mouseleave: function () {
+            console.log("you have leave the mouse from", this);
+          },
+        }); //Thats how you can attach multiple events and run them with one selector/one events.
+
+        //Element hide and show
+        // $("#rana").hide(1000, function () {
+        //   console.log("content hidden.");
+        // }); //take 1 sec to hide
+        // $("#rana").show(2000, function () {
+        //   console.log("content is showing.");
+        // }); //take 2 sec to show
+
+        //Element show and hide with toggle button
+        $('#togglebtn').click(function() {
+        $('#rana').toggle(1000)            
+        }) 
+        
+        // for more animation you can use fadeIn(), fadeOut(), fadeToggle(), fadeTo()
+        $('#fadebtn').click(function() {
+        $('#rana').fadeToggle(2000, function() {
+            console.log("Rana's content has Fade.");
+        })            
+        }) 
+
       });
     </script>
   </body>

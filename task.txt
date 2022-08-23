@@ -1,0 +1,6 @@
+build a website and user these function
+
+fadeIn()
+fadeOut()
+fadeToggle()
+fadeTo()
