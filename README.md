@@ -50,6 +50,8 @@
 
 # Events in jquery
  - Mouse Event: click, dblclick, mouseenter, mouseover, mousemove, mouseleave, mousedown, mouseup.
+    - click- on click, show&Hide,toggle button,  fadeIn(), fadeOut(), fadeToggle(), fadeTo(), slideUp and slideDown with SlideToggle
+    - animate- 
  - Keyboard Events: Keypress, keydown, Keyup.
  - Form Events: Submit, Change, Fucus, Blur. 
  - document/window events- load, resize, scroll, unload. 
