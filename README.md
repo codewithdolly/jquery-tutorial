@@ -51,8 +51,30 @@
 # Events in jquery
  - Mouse Event: click, dblclick, mouseenter, mouseover, mousemove, mouseleave, mousedown, mouseup.
     - click- on click, show&Hide,toggle button,  fadeIn(), fadeOut(), fadeToggle(), fadeTo(), slideUp and slideDown with SlideToggle
-    - animate- 
  - Keyboard Events: Keypress, keydown, Keyup.
  - Form Events: Submit, Change, Fucus, Blur. 
  - document/window events- load, resize, scroll, unload. 
  - 
+
+# To get the value 
+    - to get text/elemet value we use .text or .html. but
+    - to get form, input or textarea value we use .val (to teplace text also we use val only NOT "text or html- these are only of text and element.")
+
+# empty vs remove value 
+    - $('#wiki').empty(); - this will empty the value of element.
+    - $('#wiki').remove(); - This will delete the Element from DOM.
+
+# add/remove class and ID
+    - $('#wiki').addClass('myClass'); 
+    - $('#wiki').removeClass('myClass'); 
+    - $('#wiki').toggleClass('myClass'); 
+      
+# add CSS
+    -$("#rana").css('color', 'red'); //set css value
+    -$("#rana").css('color'); //findout the css value 
+
+# what is Ajax?
+    - Ajex is an art of exchanging data without loading a page. 
+
+# What is CORS error?
+    - Sometimes Google doesnot allow you to use data from other origin and that error is called CORS error.

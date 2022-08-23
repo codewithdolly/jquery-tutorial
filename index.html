@@ -27,6 +27,13 @@
       Amazon CA, Amazon US, Google India and 40+ SMEs. His work has reached to
       800M+ internet users online.
     </div>
+    <br /><br />
+    <form action="get">
+      <input id="formInput" type="text" placeholder="User Name" /><br /><br />
+      <textarea id="textarea" name="Hola" id="" cols="30" rows="10">
+This is Value my textarea.</textarea
+      >
+    </form>
 
     <!-- download version -->
     <script src="jquery-3.6.0.min.js"></script>
@@ -91,31 +98,52 @@
 
         //Animate Function in jquery
         // $('#rana').animate({opacity:0.2}, 5000) //its reducingtext color after 5sec
-        
+
         //Multiple CSS (instad of multiple if you use one on one then it will work in queue.)
-        $('#rana').animate({
-            opacity:0.5,
-            height:"150px",
-            color: '#005',
-            width:"60%"
+        $("#rana").animate(
+          {
+            opacity: 0.5,
+            height: "150px",
+            width: "60%",
+          },
+          3000
+        ); //instend of seting time you can write "slow" or "fast" as well.
 
-        }, 3000) //instend of seting time you can write "slow" or "fast" as well.
-
-        // To stop the animation we can use 
-        $('#rana').stop(); //as this jquery function will run animation will stop there it selp. 
-
+        // To stop the animation we can use
+        $("#rana").stop(); //as this jquery function will run animation will stop there it selp.
 
         //jquery can help to manupulate html code...
-        $('#rana').text(); //it will return text.
-        $('#rana').text('I am setting new html text'); //it will set the new text.
-        $('body').html(); //same thing happen with html as well.(it will return whole body.)
+        // $('#rana').text(); //it will return text.
+        // $('#rana').text('I am setting new html text'); //it will set the new text.
+        // $('body').html(); //same thing happen with html as well.(it will return whole body.)
 
+        // Add Css
+        $("#rana").css("color", "red"); //set css value
+        $("#rana").css("color"); //find the css value
 
+        // AJAX Using jQuery
+        $.get(
+          "https://code.jquery.com/jquery-3.3.1.js",
+          function (data, status) {
+            alert(data);
+          }
+        );
 
+        $.get(
+          "https://code.jquery.com/jquery-3.3.1.js",
+          function (data, status) {
+            alert(status);
+          }
+        );
 
-        
-
-
+        // pOST METHOD
+        $.post(
+          "https://code.jquery.com/jquery-3.3.1.js",
+          { name: "harry", channel: "code with harry" },
+          function (data, status) {
+            alert(status);
+          }
+        );
       });
     </script>
   </body>
