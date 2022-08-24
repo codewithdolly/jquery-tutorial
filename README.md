@@ -1,4 +1,5 @@
 # jquery-tutorial-
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API. https://api.jquery.com/
 
 # There are multiple ways to use Jquery
     1. you can download it and import that and use.
