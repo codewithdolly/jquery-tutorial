@@ -78,3 +78,13 @@
 
 # What is CORS error?
     - Sometimes Google doesnot allow you to use data from other origin and that error is called CORS error.
+
+# AJAX Using jQuery
+    - GET METHOD:- 
+        - $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+        - $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+    - POST METHOD
+         $.post('https://code.jquery.com/jquery-3.3.1.js',
+           { name: 'harry', channel: 'code with harry' },
+             function (data, status) { alert(status) });

@@ -122,28 +122,13 @@ This is Value my textarea.</textarea
         $("#rana").css("color"); //find the css value
 
         // AJAX Using jQuery
-        $.get(
-          "https://code.jquery.com/jquery-3.3.1.js",
-          function (data, status) {
-            alert(data);
-          }
-        );
+            // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+            // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
 
-        $.get(
-          "https://code.jquery.com/jquery-3.3.1.js",
-          function (data, status) {
-            alert(status);
-          }
-        );
-
-        // pOST METHOD
-        $.post(
-          "https://code.jquery.com/jquery-3.3.1.js",
-          { name: "harry", channel: "code with harry" },
-          function (data, status) {
-            alert(status);
-          }
-        );
+        // POST METHOD
+            // $.post('https://code.jquery.com/jquery-3.3.1.js',
+            //     { name: 'harry', channel: 'code with harry' },
+            //   function (data, status) { alert(status) });
       });
     </script>
   </body>
